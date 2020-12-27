@@ -7,7 +7,7 @@ app = Flask(__name__)
 CORS(app, support_credentials=True)
 
 # load the learner
-learn = load_learner(path='./models', file='trained_model.pkl')
+learn = load_learner(path='./models', file='export.pkl.pkl')
 classes = learn.data.classes
 
 
@@ -28,4 +28,4 @@ def predict():
 
 if __name__ == '__main__':
     app.run()
-view rawflower_classifier_api.py hosted with ❤ by GitHub
+    
